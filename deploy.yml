@@ -9,8 +9,8 @@
       package: name=epel-release state=present
     - name: install python-pip
       yum: name=python-pip state=present update_cache=yes
-    - name: Install docker python
-      pip: name=docker
+    #- name: Install docker python
+    #  pip: name=docker
   tasks:
     - name: Create Apache container
       docker_container:
